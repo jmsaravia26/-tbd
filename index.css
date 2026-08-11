@@ -1,3 +1,27 @@
+:root {
+  --fucsia: #ff00ff;
+  --cyan: #00f0ff;
+  --azul-oscuro: #0d0221;
+  --magenta:#ff005c;
+  --morado:#7b00ff;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+
+  /* tipografia */
+  --michroma: font-family: "Michroma", sans-serif;
+  --google-sans-flex: font-family: "Google Sans Flex", sans-serif;
+  --elms-sans: font-family: "Elms Sans", sans-serif;
+
+
+  /* tamaños de fuentes */
+  --texto: 12px;
+  --titulares: 24px;
+
+  --price: 18px;
+  --discount: 1rem;
+  --description: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
