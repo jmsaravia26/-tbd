@@ -27,3 +27,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* carrousel */
+.carousel-caption {
+  border: 3px solid var(--azul-oscuro);
+  background-color: var(--azul-oscuro);
+  color: var(--gris-claro);
+  padding: 15px 25px;
+  position: relative;
+  margin:0 auto;
+}
+
+
+/* categoria-de-productos */
+
+.boton-categoria {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+}
+
+.card-img {
+  height: 135px;
+  object-fit: cover;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--gris-claro);
+}
+
+.card-img-overlay {
+  z-index: 1;
+}
