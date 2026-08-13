@@ -456,6 +456,11 @@
     border: none;
 }
 
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
 .card-img {
   height: 135px;
   object-fit: cover;
@@ -466,10 +471,15 @@
   position: absolute;
   inset: 0;
   background-color: var(--gris-claro);
+  opacity: 0.4;
+  z-index: 0;
 }
 
 .card-img-overlay {
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .auth-modal .form-control:user-invalid {
