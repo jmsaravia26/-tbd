@@ -1,11 +1,11 @@
 :root {
-  --fucsia: #ff00ff;
-  --cyan: #00f0ff;
-  --azul-oscuro: #0d0221;
-  --magenta:#ff005c;
-  --morado:#7b00ff;
-  --gris-oscuro: #666;
-  --gris-claro: #ebebeb;
+  --primario: #66c0f4;
+  --secundiario-cajas: #2a475e;
+  --tercerio-precios: #a3cf06;
+  --neutral-fondo:#1b2838;
+  --hover:#449ed3;  
+  --titulos-parrafos: #ebebeb;
+  --letra-menos-importante: #666;
 
   /* tipografia */
   --michroma: font-family: "Michroma", sans-serif;
