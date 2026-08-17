@@ -24,7 +24,7 @@
   --descripcion: 10px;
   --precio: 18px;
   --descuento: 1rem;
-  --descripcion: 1rem;
+  --descripcion: 10px;
 }
 
 * {
@@ -33,6 +33,22 @@
     box-sizing: border-box;
 }
 
+main {
+  background-color: #1b2838;
+}
+
+.titulos {
+  color: var(--titulos-parrafos);
+  font-size: var(--titulares);
+  font-family: var(--michroma);
+  padding: 20px
+}
+
+.titulos-cajas {
+  color: var(--titulos-parrafos);
+  font-size: var(--titulos-cajas);
+  font-family: var(--michroma);
+}
 
 .texto-descripcion {
   color: var(--titulos-parrafos);
@@ -49,7 +65,78 @@
   padding: 15px 25px;
   position: relative;
   margin:0 auto;
+  width: 500px;
 }
+
+/* novedades */
+.novedades-caracteristicas {
+  padding: 20px;
+}
+
+.grilla-novedades {
+  display: grid;
+  grid-template-columns: 900px 400px;
+  grid-template-rows: repeat(5, 200px);
+  grid-template-areas: 
+  "contenedor-grilla-cards contenedor-grilla-publicidad"
+  "contenedor-grilla-cards contenedor-grilla-publicidad"
+  "contenedor-grilla-cards contenedor-grilla-publicidad"
+  "contenedor-grilla-cards contenedor-grilla-publicidad"
+  "contenedor-grilla-cards contenedor-grilla-publicidad";
+  gap: 10px;
+  padding: 5px;
+}
+
+.novedades-cajas {
+  gap: 5px;
+  background-color: var(--neutral-fondo);
+  border: 4px solid #2a475e;
+  color: var(--titulos-parrafos);
+  height: 200px;
+  width: auto;
+}
+
+.novedades-caja-precio {
+  background-color: var(--neutral-fondo);
+  border: 1px solid #66c0f4;
+  font-family: var(--elms-sans);
+  display: flex;
+  gap: 3px;
+  width: 140px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: var(--titulos-parrafos); 
+}
+
+.descuento {
+  background-color: var(--tercerio-precios);
+  color: var(--neutral-fondo);
+  font-size: var(--descuento);
+  font-family: var(--elms-sans);
+  border: 1px solid #a3cf06;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+}
+
+.precio-ubicacion {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-bottom: 2px;
+  padding-right: 5px;
+}
+
+.publicidad1 {
+  height: 800px;
+  width: 400px;
+}
+
 
 
 /* categoria-de-productos */
