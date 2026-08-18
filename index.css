@@ -75,7 +75,7 @@ main {
 
 .grilla-novedades {
   display: grid;
-  grid-template-columns: 900px 400px;
+  grid-template-columns: 700px 300px;
   grid-template-rows: repeat(5, 200px);
   grid-template-areas: 
   "contenedor-grilla-cards contenedor-grilla-publicidad"
@@ -94,6 +94,10 @@ main {
   color: var(--titulos-parrafos);
   height: 200px;
   width: auto;
+}
+
+.novedades-contenedor-imagen {
+  object-fit: cover;
 }
 
 .novedades-caja-precio {
@@ -141,34 +145,48 @@ main {
 
 /* categoria-de-productos */
 
-.boton-categoria {
-    background-color: white;
-    color: black;
+.categoria-texto {
+    background-color: #ebebeb;
+    color: #2a475e;
     font-weight: bold;
-    border: none;
+    font-family: var(--google-sans-flex);
+    border: 1px solid #666;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 4px 5px 4px 5px;
+    border-radius: 10px;
 }
 
-.card {
+.card-categorias {
   position: relative;
   overflow: hidden;
 }
 
-.card-img {
-  height: 135px;
-  object-fit: cover;
-}
-
-.card::after {
+.card-categorias::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--gris-claro);
-  opacity: 0.4;
-  z-index: 0;
+   background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.92) 20%,
+    rgba(0, 0, 0, 0.65) 50%,
+    rgba(0, 0, 0, 0.25) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.card-img {
+  height: 135px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-img-overlay {
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
