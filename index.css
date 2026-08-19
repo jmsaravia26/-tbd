@@ -1,7 +1,11 @@
 :root {
   --neutral-fondo:#0f1824;
   --neutral-fondo-2:#1b2838;
+  --neutral-fondo:#0f1824;
+  --neutral-fondo-2:#1b2838;
   --secundiario-cajas: #2a475e;
+  --primario-botones: #449ed3;
+  --hover-botones: #256991;
   --primario-botones: #449ed3;
   --hover-botones: #256991;
   --tercerio-precios: #a3cf06;
@@ -16,6 +20,7 @@
 
 
   --texto: 13px;
+  --titulares: 27px;
   --titulares: 27px;
   --titulos-cajas:18px;
 
@@ -34,7 +39,7 @@
 }
 
 main {
-  background-color: #1b2838;
+  background-color: var(--neutral-fondo);
 }
 
 .titulos {
@@ -69,40 +74,52 @@ main {
 }
 
 /* novedades */
-.novedades-caracteristicas {
-  padding: 20px;
-}
 
 .grilla-novedades {
   display: grid;
   grid-template-columns: 700px 300px;
-  grid-template-rows: repeat(5, 200px);
+  /* grid-template-rows: repeat(5, 200px);
   grid-template-areas: 
   "contenedor-grilla-cards contenedor-grilla-publicidad"
   "contenedor-grilla-cards contenedor-grilla-publicidad"
   "contenedor-grilla-cards contenedor-grilla-publicidad"
   "contenedor-grilla-cards contenedor-grilla-publicidad"
-  "contenedor-grilla-cards contenedor-grilla-publicidad";
+  "contenedor-grilla-cards contenedor-grilla-publicidad"; */
   gap: 10px;
   padding: 5px;
 }
 
-.novedades-cajas {
-  gap: 5px;
-  background-color: var(--neutral-fondo);
-  border: 4px solid #2a475e;
-  color: var(--titulos-parrafos);
-  height: 200px;
-  width: auto;
+.contenedor-grilla-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.novedades-contenedor-imagen {
+.novedades-cajas {
+  display: flex;
+  gap: 15px;
+  background-color: var(--neutral-fondo-2);
+  border: 4px solid var(--secundiario-cajas);
+  color: var(--titulos-parrafos);
+  height: 140px;
+  width: 100%;
+}
+
+.novedades-cajas .card-body {
+  padding: 15px;
+  flex: 1;
+}
+
+.card-imagen {
+  width: auto;
+  height: 133px;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .novedades-caja-precio {
-  background-color: var(--neutral-fondo);
-  border: 1px solid #66c0f4;
+  background-color: var(--neutral-fondo-2);
+  border: 1px solid var(--primario-botones);
   font-family: var(--elms-sans);
   display: flex;
   gap: 3px;
@@ -119,7 +136,7 @@ main {
   color: var(--neutral-fondo);
   font-size: var(--descuento);
   font-family: var(--elms-sans);
-  border: 1px solid #a3cf06;
+  border: 1px solid var(--tercerio-precios);
   width: 50px;
   height: 30px;
   display: flex;
@@ -130,8 +147,8 @@ main {
 
 .precio-ubicacion {
   display: flex;
-  justify-content: end;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: center;
   padding-bottom: 2px;
   padding-right: 5px;
 }
@@ -139,6 +156,7 @@ main {
 .publicidad1 {
   height: 800px;
   width: 400px;
+  object-fit: cover;
 }
 
 
@@ -190,6 +208,114 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* prod-descuento */
+.dto-contenedor {
+  background-color: var(--secundiario-cajas);
+  display: flex;
+  height: 170px;
+}
+
+.dto-carrousel {
+  position: relative;
+  padding: 0 44px;
+  display: flex;
+  align-items: center;
+}
+
+.dto-card {
+  width: 210px;
+  height: 100px;
+}
+
+.dto-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dto-precios {
+  display: flex;
+  align-content: end;
+  gap: 5px;
+}
+
+.dto-caja-precio {
+  background-color: var(--neutral-fondo);
+  border: 1px solid var(--letra-menos-importante);
+  font-family: var(--elms-sans);
+  display: flex;
+  gap: 3px;
+  width: 140px;
+  height: 30px;
+  color: var(--titulos-parrafos);
+  font-size: var(--precio); 
+}
+
+.dto-caja-promo {
+  background-color: var(--tercerio-precios);
+  color: var(--neutral-fondo);
+  font-size: var(--descuento);
+  font-family: var(--elms-sans);
+  border: 1px solid #a3cf06;
+  width: 50px;
+  height: 30px;
+  font-weight: bold;
+}
+
+/* prod-descuento */
+.dto-contenedor {
+  background-color: var(--secundiario-cajas);
+  display: flex;
+  height: 170px;
+}
+
+.dto-carrousel {
+  position: relative;
+  padding: 0 44px;
+  display: flex;
+  align-items: center;
+}
+
+.dto-card {
+  width: 210px;
+  height: 100px;
+}
+
+.dto-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dto-precios {
+  display: flex;
+  align-content: end;
+  gap: 5px;
+}
+
+.dto-caja-precio {
+  background-color: var(--neutral-fondo);
+  border: 1px solid var(--letra-menos-importante);
+  font-family: var(--elms-sans);
+  display: flex;
+  gap: 3px;
+  width: 140px;
+  height: 30px;
+  color: var(--titulos-parrafos);
+  font-size: var(--precio); 
+}
+
+.dto-caja-promo {
+  background-color: var(--tercerio-precios);
+  color: var(--neutral-fondo);
+  font-size: var(--descuento);
+  font-family: var(--elms-sans);
+  border: 1px solid #a3cf06;
+  width: 50px;
+  height: 30px;
+  font-weight: bold;
 }
 
 .auth-modal .form-control:user-invalid {
