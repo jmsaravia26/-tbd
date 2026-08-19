@@ -99,32 +99,46 @@ main {
   display: flex;
   gap: 15px;
   background-color: var(--neutral-fondo-2);
-  border: 4px solid var(--secundiario-cajas);
+  border: 2px solid var(--secundiario-cajas);
   color: var(--titulos-parrafos);
-  height: 140px;
+  height: 100px;
   width: 100%;
+  overflow: hidden;
 }
 
 .novedades-cajas .card-body {
-  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0px;
   flex: 1;
 }
 
+.novedades-a {
+  text-decoration: none;
+}
+
 .card-imagen {
-  width: auto;
-  height: 133px;
-  object-fit: cover;
+  width: 250px;
+  height: auto;
+  object-fit: contain;
   flex-shrink: 0;
+}
+
+.novedades-cajas .card-title,
+.novedades-cajas .texto-descripcion {
+  margin-bottom: 4px;
 }
 
 .novedades-caja-precio {
   background-color: var(--neutral-fondo-2);
   border: 1px solid var(--primario-botones);
   font-family: var(--elms-sans);
+  font-size: 12px;
   display: flex;
   gap: 3px;
-  width: 140px;
-  height: 30px;
+  width: 110px;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -134,11 +148,11 @@ main {
 .descuento {
   background-color: var(--tercerio-precios);
   color: var(--neutral-fondo);
-  font-size: var(--descuento);
+  font-size: 12px;
   font-family: var(--elms-sans);
   border: 1px solid var(--tercerio-precios);
-  width: 50px;
-  height: 30px;
+  width: 35px;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -148,9 +162,10 @@ main {
 .precio-ubicacion {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-content: flex-end;
+  /* margin-top: auto; */
   padding-bottom: 2px;
-  padding-right: 5px;
+  padding-right: 3px;
 }
 
 .publicidad1 {
@@ -258,7 +273,7 @@ main {
   color: var(--neutral-fondo);
   font-size: var(--descuento);
   font-family: var(--elms-sans);
-  border: 1px solid #a3cf06;
+  border: var(--tercerio-precios) 1px solid;
   width: 50px;
   height: 30px;
   font-weight: bold;
