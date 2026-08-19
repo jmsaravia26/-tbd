@@ -167,24 +167,53 @@
   color: var(--primario-botones);
 }
 
-.btn-register {
+.btn-cart {
+  position: relative;
   border: 1px solid var(--primario-botones);
   background-color: var(--primario-botones);
   color: #fff;
   border-radius: 8px;
-  padding: 0.45rem 1.1rem;
+  padding: 0.45rem 0.8rem;
   font-size: var(--texto);
   font-family: var(--elms-sans);
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.btn-register:hover {
+.btn-cart svg {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-cart:hover {
   background-color: var(--hover-botones);
   border-color: var(--hover-botones);
   color: #fff;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--tercerio-precios);
+  color: #0f1824;
+  font-family: var(--elms-sans);
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .navbar-toggler {
@@ -243,7 +272,7 @@
   }
 
   .btn-login,
-  .btn-register {
+  .btn-cart {
     width: 100%;
     max-width: 320px;
     text-align: center;
