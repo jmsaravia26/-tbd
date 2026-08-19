@@ -1,0 +1,54 @@
+:root {
+  --neutral-fondo:#0f1824;
+  --neutral-fondo-2:#1b2838;
+  --secundiario-cajas: #2a475e;
+  --primario-botones: #449ed3;
+  --hover-botones: #256991;
+  --tercerio-precios: #a3cf06;
+  --titulos-parrafos: #ebebeb;
+  --letra-menos-importante: #666;
+
+  /* tipografia */
+  --michroma: font-family: "Michroma", sans-serif;
+  --google-sans-flex: font-family: "Google Sans Flex", sans-serif;
+  --elms-sans: font-family: "Elms Sans", sans-serif;
+
+
+  /* tamaños de fuentes */
+  --texto: 13px;
+  --titulares: 27px;
+  --titulos-cajas:18px;
+
+  --precio: 13px;
+  --descuento: 13px;
+  --descripcion: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slogan-grupo {
+    font-family: var(--elms-sans);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--letra-menos-importante);
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-fotos {
+    display: flex;
+    padding: 10px 20px;
+    
+}
+
+.foto-integrantes {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: var(--secundiario-cajas) 3px solid;
+    gap: 20px;
+}
