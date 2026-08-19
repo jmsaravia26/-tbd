@@ -26,7 +26,6 @@ body {
     background-color: var(--neutral-fondo);
     color: var(--titulos-parrafos);
 }
-
 .carrousel-wrap{ max-width:100%; }
 .carrousel-wrap > input[type="radio"]{ display:none; } 
 .carrousel-main{
