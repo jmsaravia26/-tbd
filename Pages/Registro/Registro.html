@@ -1,14 +1,92 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="/Pages/Registro/Registro.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta · GameVault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Registro.css">
+</head>
+<body>
+  <div class="pagina-registro">
+    <aside class="panel-marca">
+      <div class="panel-marca__contenido">
+        <p class="panel-marca__eyebrow">001 // ACCESO</p>
+        <h1 class="panel-marca__logo">Spawn<span>Point</span></h1>
+        <p class="panel-marca__frase">
+          Tu biblioteca, tus reglas. Guardá tu progreso, tus compras
+          y tus listas de deseos en un solo lugar.
+        </p>
+        <ul class="panel-marca__lista">
+          <li><span class="tick">✓</span> Ofertas exclusivas para miembros</li>
+          <li><span class="tick">✓</span> Historial de compras y facturas</li>
+          <li><span class="tick">✓</span> Lista de deseos sincronizada</li>
+        </ul>
+      </div>
+      <div class="panel-marca__grid" aria-hidden="true"></div>
+    </aside>
+    <main class="panel-formulario">
+      <div class="caja-formulario">
+        <header class="caja-formulario__header">
+          <p class="badge">NUEVO JUGADOR</p>
+          <h2>Creá tu cuenta</h2>
+          <p class="subtitulo">
+            Ya tenés cuenta? <a href="login.html">Iniciá sesión</a>
+          </p>
+        </header>
+        <form class="form-registro" action="#" method="post" novalidate>
+          <div class="campo campo--doble">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="given-name" required>
+            </div>
+            <div class="campo">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="usuario">Nombre de usuario</label>
+            <input type="text" id="usuario" name="usuario" autocomplete="username" placeholder="Como te van a ver otros jugadores" required>
+          </div>
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="campo campo--doble">
+            <div class="campo">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="+54 9 ..." required>
+            </div>
+            <div class="campo">
+              <label for="cp">Código postal</label>
+              <input type="text" id="cp" name="cp" autocomplete="postal-code" inputmode="numeric" required>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="domicilio">Domicilio</label>
+            <input type="text" id="domicilio" name="domicilio" autocomplete="street-address" placeholder="Calle, número, ciudad" required>
+          </div>
+          <div class="campo campo--doble">
+            <div class="campo">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+              <p class="ayuda">Mínimo 8 caracteres.</p>
+            </div>
+            <div class="campo">
+              <label for="password2">Confirmar contraseña</label>
+              <input type="password" id="password2" name="password2" autocomplete="new-password" minlength="8" required>
+            </div>
+          </div>
+          <div class="campo campo--check">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los <a href="#">Términos de servicio</a> y la <a href="#">Política de privacidad</a>.</label>
+          </div>
+          <button type="submit" class="boton-crear">Crear cuenta</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
