@@ -5,6 +5,31 @@
     box-sizing: border-box;
 }
 
+.nav-link3 {
+  background-color: #449ed3;
+}
+
+.logo1 {
+  width: 30px;
+  height: 30px;
+}
+
+.logo2 {
+  width: 30px;
+  height: 30px;
+}
+
+.imagen-logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* navbar */
+.modal-google-facebook {
+    width: 5px;
+
+}
+
 /* carrousel */
 .carousel-caption {
   border: 3px solid var(--secundiario-cajas);
