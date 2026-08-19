@@ -6,12 +6,10 @@
   --hover: #449ed3;
   --titulos-parrafos: #ebebeb;
   --letra-menos-importante: #666;
- 
   /* tipografia */
   --michroma: "Michroma", sans-serif;
   --google-sans-flex: "Google Sans Flex", sans-serif;
   --elms-sans: "Elms Sans", sans-serif;
- 
   /* tamaños de fuentes */
   --texto: 12px;
   --titulares: 24px;
@@ -28,10 +26,9 @@ body {
     background-color: var(--neutral-fondo);
     color: var(--titulos-parrafos);
 }
-/*CARROUSEL*/
+
 .carrousel-wrap{ max-width:100%; }
-.carrousel-wrap > input[type="radio"]{ display:none; }
- 
+.carrousel-wrap > input[type="radio"]{ display:none; } 
 .carrousel-main{
     position:relative;
     width:100%;
@@ -40,7 +37,6 @@ body {
     border-radius:6px;
     overflow:hidden;
 }
- 
 .carrousel-slide{
     position:absolute;
     inset:0;
@@ -51,7 +47,6 @@ body {
     pointer-events:none;
     z-index:0;
 }
- 
 .carrousel-nav{
     position:absolute;
     top:0; bottom:0;
@@ -70,7 +65,6 @@ body {
 .carrousel-nav:hover{ background:rgba(23,26,33,.9); }
 .carrousel-nav.prev{ left:0; }
 .carrousel-nav.next{ right:0; }
- 
 .carrousel-thumbs{
     display:flex;
     gap:6px;
@@ -80,7 +74,6 @@ body {
 }
 .carrousel-thumbs::-webkit-scrollbar{ height:6px; }
 .carrousel-thumbs::-webkit-scrollbar-thumb{ background:#3a4450; border-radius:4px; }
- 
 .carrousel-thumb{
     flex:0 0 auto;
     width:110px;
@@ -95,7 +88,6 @@ body {
     transition:opacity .15s ease, border-color .3s ease;
 }
 .carrousel-thumb:hover{ opacity:.9; }
- 
 #g1:checked ~ .carrousel-main .cs-1,
 #g2:checked ~ .carrousel-main .cs-2,
 #g3:checked ~ .carrousel-main .cs-3,
@@ -118,7 +110,6 @@ body {
     opacity:1;
     border-color: var(--primario);
 }
-/*HEADER*/
 .header {
     background-color: #305096cf;
     display: flex;
@@ -143,7 +134,6 @@ body {
 .menu a:hover {
     text-decoration: underline;
 } 
-/*PRODUCTO*/
 .producto {
     width: 90%;
     max-width: 1200px;
@@ -155,7 +145,6 @@ body {
     padding: 40px;
     border-radius: 8px;
 }
-/*IMAGEN*/
 .producto-imagen {
     display: flex;
     justify-content: center;
@@ -167,8 +156,6 @@ body {
     height: auto;
     object-fit: contain;
 }
- 
-/*INFORMACIÓN*/
 .producto-info {
     display: flex;
     flex-direction: column;
@@ -194,14 +181,12 @@ body {
     align-items: baseline;
     gap: 12px;
 } 
-/* recio anterior, tachado, cuando hay descuento*/
 .precio-anterior {
     font-size: var(--discount);
     font-weight: normal;
     color: var(--letra-menos-importante);
     text-decoration: line-through;
 }
- /*precio promocional / con descuento*/
 .precio-descuento {
     color: var(--tercerio-precios);
     font-size: var(--price);
@@ -212,7 +197,6 @@ body {
     line-height: 1.6;
     color: var(--titulos-parrafos);
 }
-/*FICHA TÉCNICA (estilo Steam: fecha de lanzamiento, desarrollador, sitio web)*/
 .ficha-tecnica {
     margin-top: 20px;
     padding-top: 20px;
@@ -241,7 +225,6 @@ body {
     color: var(--hover);
     text-decoration: underline;
 }
-/*BOTÓN*/
 .btn-comprar {
     display: block;
     background-color: var(--primario);
@@ -257,7 +240,6 @@ body {
 .btn-comprar:hover {
     background-color: var(--hover);
 } 
-/*DESCRIPCIÓN*/
 .informacion-producto {
     width: 90%;
     max-width: 1200px;
@@ -277,7 +259,6 @@ body {
     line-height: 1.7;
     color: var(--titulos-parrafos);
 }
-/*COMENTARIOS*/
 .comentarios {
     width: 90%;
     max-width: 1200px;
@@ -313,14 +294,12 @@ body {
     line-height: 1.5;
     color: var(--titulos-parrafos);
 }
-/*FOOTER*/
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 25px;
 }
-/*RESPONSIVE - CELULARES*/
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
