@@ -18,7 +18,6 @@
   --google-sans-flex: "Google Sans Flex", sans-serif;
   --elms-sans: "Elms Sans", sans-serif;
 
-
   --texto: 13px;
   --titulares: 27px;
   --titulares: 27px;
@@ -61,7 +60,6 @@ main {
   font-family: var(--google-sans-flex);
 }
 
-/* carrousel */
 .carousel-caption {
   border: 3px solid var(--neutral-fondo);
   background-color: var(--secundiario-cajas);
@@ -71,28 +69,6 @@ main {
   position: relative;
   margin:0 auto;
   width: 500px;
-}
-
-/* novedades */
-
-.grilla-novedades {
-  display: grid;
-  grid-template-columns: 700px 300px;
-  /* grid-template-rows: repeat(5, 200px);
-  grid-template-areas: 
-  "contenedor-grilla-cards contenedor-grilla-publicidad"
-  "contenedor-grilla-cards contenedor-grilla-publicidad"
-  "contenedor-grilla-cards contenedor-grilla-publicidad"
-  "contenedor-grilla-cards contenedor-grilla-publicidad"
-  "contenedor-grilla-cards contenedor-grilla-publicidad"; */
-  gap: 10px;
-  padding: 5px;
-}
-
-.contenedor-grilla-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 .novedades-cajas {
@@ -110,7 +86,7 @@ main {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  padding: 0px;
+  padding: 0;
   flex: 1;
 }
 
@@ -120,8 +96,8 @@ main {
 
 .card-imagen {
   width: 250px;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   flex-shrink: 0;
 }
 
@@ -139,10 +115,10 @@ main {
   gap: 3px;
   width: 110px;
   height: 25px;
-  display: flex;
   justify-content: center;
   align-content: center;
-  color: var(--titulos-parrafos); 
+  color: var(--titulos-parrafos);
+  flex-shrink: 0; 
 }
 
 .descuento {
@@ -157,26 +133,25 @@ main {
   justify-content: center;
   align-content: center;
   font-weight: bold;
+  flex-shrink: 0;
 }
 
 .precio-ubicacion {
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
-  /* margin-top: auto; */
+  margin-top: auto;
   padding-bottom: 2px;
   padding-right: 3px;
+  min-width: 0;
 }
+
 
 .publicidad1 {
-  height: 800px;
-  width: 400px;
-  object-fit: cover;
+  height: 600px;
+  width: 160px;
+  min-width: 100%;
 }
-
-
-
-/* categoria-de-productos */
 
 .categoria-texto {
     background-color: #ebebeb;
@@ -225,35 +200,42 @@ main {
   align-items: center;
 }
 
-/* prod-descuento */
 .dto-contenedor {
   background-color: var(--secundiario-cajas);
-  display: flex;
-  height: 170px;
+  width: 100%;
+  padding: 20px;
 }
 
-.dto-carrousel {
-  position: relative;
-  padding: 0 44px;
+.col2 {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .dto-card {
-  width: 210px;
+  max-width: 220px;
+  width: 100%;
   height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .dto-card img {
-  width: 100%;
+  /* width: 100%; */
+  width: 205px;
   height: 100%;
   object-fit: cover;
 }
 
 .dto-precios {
   display: flex;
-  align-content: end;
-  gap: 5px;
+  justify-content: center;
+}
+
+.dto-precios2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 20px;
 }
 
 .dto-caja-precio {
@@ -261,9 +243,10 @@ main {
   border: 1px solid var(--letra-menos-importante);
   font-family: var(--elms-sans);
   display: flex;
+  justify-content: center;
   gap: 3px;
-  width: 140px;
-  height: 30px;
+  width: 120px;
+  height: 25px;
   color: var(--titulos-parrafos);
   font-size: var(--precio); 
 }
@@ -274,8 +257,8 @@ main {
   font-size: var(--descuento);
   font-family: var(--elms-sans);
   border: var(--tercerio-precios) 1px solid;
-  width: 50px;
-  height: 30px;
+  width: 35px;
+  height: 25px;
   font-weight: bold;
 }
 
