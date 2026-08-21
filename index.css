@@ -108,7 +108,17 @@ main {
   gap: 0.6rem;
 }
 
-/* buscador */
+.dropdown-menu-estetica {
+  background-color: var(--neutral-fondo) !important;
+}
+
+.dropdown-menu-estetica > li > a {
+  color: var(--titulos-parrafos) !important;
+  &:hover {
+    background-color: var(--hover-botones);
+  }
+}
+
 .search-form {
   display: flex;
   align-items: center;
@@ -417,12 +427,6 @@ main {
   object-fit: cover;
 }
 
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--gris-claro);
-}
 
 .card-img-overlay {
   z-index: 1;
@@ -500,6 +504,11 @@ main {
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
+}
+
+.card-efecto:hover {
+  transform: scale(1.02);
+  transition: ease 0.3s;
 }
 
 .novedades-cajas .card-title,
