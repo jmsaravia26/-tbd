@@ -36,7 +36,7 @@ main {
     min-height: 100vh;
 }
 
-logo1 {
+.logo1 {
   width: 30px;
   height: 30px;
 }
@@ -420,6 +420,8 @@ logo1 {
   object-fit: cover;
 }
 
+
+
 .card-body {
     background-color: var(--neutral-fondo-2);
     color: var(--titulos-parrafos);
@@ -430,7 +432,7 @@ logo1 {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--gris-claro);
+  
 }
 
 .card-img-overlay {
@@ -450,6 +452,7 @@ logo1 {
 .auth-modal .form-control:user-invalid ~ .invalid-feedback {
   display: block;
 }
+
 
 @media (max-width: 991.98px) {
   .navbar-spawn {

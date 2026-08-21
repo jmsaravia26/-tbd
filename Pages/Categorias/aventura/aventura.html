@@ -12,99 +12,59 @@
   </head>
   <body>
   <nav class="navbar navbar-expand-lg navbar-spawn">
-  <div class="container-fluid navbar-container">
-    <a class="navbar-brand navbar-logo" href="#">
-      <img
-        src="./Assets/Images/logo/spawn-point-logo.webp"
-        class="imagen-logo"
-        alt="Spawn Point"
-      >
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarContent"
-      aria-controls="navbarContent"
-      aria-expanded="false"
-      aria-label="Abrir menú"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div
-      class="collapse navbar-collapse"
-      id="navbarContent"
-    >
-      <ul class="navbar-nav navbar-links">
-
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            aria-current="page"
-            href="#"
-          >
-            Inicio
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-          >
-            Sobre Nosotros
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="#"
-          >
+      <div class="container-fluid navbar-container">
+        <a class="navbar-brand navbar-logo" href="./index.html">
+          <img src="./Assets/Images/logo/spawn-point-logo.webp" class="imagen-logo" alt="Spawn Point">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav navbar-links">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Pages/Sobre-nosotros/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorías
           </a>
+          <ul class="dropdown-menu dropdown-menu-estetica">
+            <li><a class="dropdown-item" href="./Pages/Categorias/aventura/aventura.html">Aventura</a></li>
+            <li><a class="dropdown-item" href="./Pages/Categorias/cooperativo-online/cooperativo-online.html">Cooperativos</a></li>
+            <li><a class="dropdown-item" href="./Pages/Categorias/estrategias/estrategias.html">Estrategias</a></li>
+            <li><a class="dropdown-item" href="./Pages/Categorias/rpg/rpg.html">RPG</a></li>
+            <li><a class="dropdown-item" href="./Pages/error404/404.html">Carreras</a></li>
+            <li><a class="dropdown-item" href="./Pages/error404/404.html">Ciencia Ficción</a></li>
+            <li><a class="dropdown-item" href="./Pages/error404/404.html">Simulación</a></li>
+            <li><a class="dropdown-item" href="./Pages/error404/404.html">Anime</a></li>
+            <li><a class="dropdown-item" href="./Pages/error404/404.html">Novela Gráfica</a></li>
+            <li><a class="dropdown-item" href="./Pages/error404/404.html">VR</a></li>
+          </ul>
         </li>
-
-      </ul>
-      <div class="navbar-actions">
-        <form class="search-form" role="search">
-
-          <input
-            class="search-input"
-            type="search"
-            placeholder="Buscar"
-            aria-label="Buscar"
-          >
-
-          <button
-            class="btn-search"
-            type="submit"
-          >
-            Buscar
-          </button>
-
-        </form>
-        <button
-          type="button"
-          class="btn-login"
-          data-bs-toggle="modal"
-          data-bs-target="#loginModal"
-        >
-          Iniciar sesión
-        </button>
-        <button type="button" class="btn-cart">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-          </svg>
-          <span class="cart-badge">3</span>
-        </button>
-
+          </ul>
+          <div class="navbar-actions">
+            <form class="search-form" role="search">
+              <input class="search-input" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn-search" type="submit" href="./Pages/error404/404.html">
+                Buscar
+              </button>
+            </form>
+            <button type="button" class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Iniciar sesión
+            </button>
+            <a href="./Pages/Carrito/carrito.html" class="btn-cart">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48-.08-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.89-2-1.99-2z"/>
+              </svg>
+              <span class="cart-badge">3</span>
+            </a>
+          </div>
+        </div>
       </div>
-
-    </div>
-
-  </div>
-</nav>  
+    </nav> 
  <main class="main-categorias">
        <div class="container g-5 contenedor-padre">
         <div class="mb-4 titulo">
