@@ -30,6 +30,17 @@
     box-sizing: border-box;
 }
 
+.titulo {
+    padding: 25px;
+    font-family: var(--michroma);
+}
+
+.card-body {
+    background-color: var(--neutral-fondo-2);
+    color: var(--titulos-parrafos);
+    font-family: var(--google-sans-flex);
+}
+
 main {
     background-color: var(--neutral-fondo);
     color: white;
