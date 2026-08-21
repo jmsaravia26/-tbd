@@ -18,3 +18,15 @@ h1 {
     width: 200px;
     height: auto;
 }
+.card .form-control {
+    background-color: #374151;
+    color: white;
+    border: 1px solid #4b5563;
+}
+
+.card .form-control::placeholder {
+    color: #d1d5db;
+}
+h3{
+    color:white;
+}
