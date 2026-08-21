@@ -50,3 +50,14 @@ main {
 .contenedor{
     margin-left: 530px;
 }
+
+.dropdown-menu-estetica {
+  background-color: var(--neutral-fondo) !important;
+}
+
+.dropdown-menu-estetica > li > a {
+  color: var(--titulos-parrafos) !important;
+  &:hover {
+    background-color: var(--hover-botones);
+  }
+}
