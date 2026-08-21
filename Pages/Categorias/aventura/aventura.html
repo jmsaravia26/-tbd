@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spawn Point | Aventura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../aventura/aventura.css">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-spawn">
+  <div class="container-fluid navbar-container">
+    <a class="navbar-brand navbar-logo" href="#">
+      <img
+        src="./Assets/Images/logo/spawn-point-logo.webp"
+        class="imagen-logo"
+        alt="Spawn Point"
+      >
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarContent"
+      aria-expanded="false"
+      aria-label="Abrir menú"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      id="navbarContent"
+    >
+      <ul class="navbar-nav navbar-links">
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            href="#"
+          >
+            Inicio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+          >
+            Sobre Nosotros
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#"
+          >
+            Categorías
+          </a>
+        </li>
+
+      </ul>
+      <div class="navbar-actions">
+        <form class="search-form" role="search">
+
+          <input
+            class="search-input"
+            type="search"
+            placeholder="Buscar"
+            aria-label="Buscar"
+          >
+
+          <button
+            class="btn-search"
+            type="submit"
+          >
+            Buscar
+          </button>
+
+        </form>
+        <button
+          type="button"
+          class="btn-login"
+          data-bs-toggle="modal"
+          data-bs-target="#loginModal"
+        >
+          Iniciar sesión
+        </button>
+        <button type="button" class="btn-cart">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+          </svg>
+          <span class="cart-badge">3</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</nav>  
+ <main class="main-categorias">
+       <div class="container g-5 contenedor-padre">
+        <div class="mb-4 titulo">
+            <h3>Aventura</h3>
+        </div>
+        <div class="row contenedor-cards g-5 ">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../../Assets/Images/categorias-productos/accion-aventura/header-resident-evil-requiem.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Resident Evil: Requiem</h5>
+                        <div class="d-flex justify-content-end py-1">
+                            <a href="" class="btn btn-info d-flex">Ver más</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../../Assets/Images/categorias-productos/accion-aventura/header-counter-strike-2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Counter Strike 2</h5>
+                        <div class="d-flex justify-content-end py-1">
+                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../../Assets/Images/categorias-productos/accion-aventura/header-dayz.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dayz</h5>
+                        <div class="d-flex justify-content-end py-1">
+                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../../Assets/Images/categorias-productos/accion-aventura/header-silent-hill-2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Silent Hill</h5>
+                        <div class="d-flex justify-content-end py-1">
+                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                 <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../../Assets/Images/categorias-productos/accion-aventura/Rust/header-rust.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rust</h5>
+                        <div class="d-flex justify-content-end py-1">
+                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../../Assets/Images/categorias-productos/accion-aventura/God-of-War-Ragnarok/header-god-of-war-ragnarok.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">God of War: Ragnarok</h5>
+                        <div class="d-flex justify-content-end py-1">
+                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+
+    </div>
+</div>
+ </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
