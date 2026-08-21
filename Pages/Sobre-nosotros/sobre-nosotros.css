@@ -1,0 +1,85 @@
+:root {
+  --neutral-fondo:#0f1824;
+  --neutral-fondo-2:#1b2838;
+  --secundiario-cajas: #2a475e;
+  --primario-botones: #449ed3;
+  --hover-botones: #256991;
+  --tercerio-precios: #a3cf06;
+  --titulos-parrafos: #ebebeb;
+  --letra-menos-importante: #666;
+
+  --michroma: font-family: "Michroma", sans-serif;
+  --google-sans-flex: font-family: "Google Sans Flex", sans-serif;
+  --elms-sans: font-family: "Elms Sans", sans-serif;
+
+  --texto: 13px;
+  --titulares: 27px;
+  --titulos-cajas:18px;
+
+  --precio: 13px;
+  --descuento: 13px;
+  --descripcion: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--neutral-fondo);
+    height: 100vh;
+    width: 100vw;
+}
+
+.titulos {
+  color: var(--titulos-parrafos);
+  font-size: var(--titulares);
+  font-family: var(--michroma);
+  padding: 20px
+}
+
+.slogan-grupo {
+    font-family: var(--elms-sans);
+    font-style: italic;
+    color: var(--primario-botones);
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 30px 0;
+}
+
+.contenedor-integrantes {
+    background-color: var(--neutral-fondo-2);
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: var(--hover-botones) 2px solid;
+}
+
+.foto-integrantes {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: var(--secundiario-cajas) 3px solid;
+    object-fit: cover;
+    
+}
+
+.texto-fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--titulos-parrafos);
+    font-family: var(--google-sans-flex);
+    margin-top: 20px;
+}
+
+.texto-fotos p {
+    margin-bottom: 5px;
+}
