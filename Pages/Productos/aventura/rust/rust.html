@@ -73,27 +73,22 @@
       </div>
     </nav>
 
-    <div
-      class="modal fade auth-modal"
-      id="loginModal"
-      tabindex="-1"
-      aria-labelledby="loginModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+     <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="row justify-content-center">
 
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="loginModal">
-              Iniciar sesión
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
-          </div>
+                
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+
+                        <img src="../../../Assets/Images/logo/spawn-point-logo.webp" alt="Logo-spawn-point" class="img-fluid mb-3"
+                            style="max-width: 150px;">
+
+                        <p>
+                            Encontrá productos, ofertas y todo lo que necesitás
+                            en un solo lugar.
+                        </p>
+                    </div>
 
                     
                     <div class="col-12 col-md-6 col-lg-3 mb-4">
@@ -106,6 +101,64 @@
                             <li><a href="./Pages/error404/404.html" class="text-white text-decoration-none">X</a></li>
                         </ul>
                     </div>
+
+                    
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <h5>Información</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Quiénes somos</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Envíos</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Medios de pago</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+    </footer>
+  
+
+    <div
+      class="modal fade auth-modal"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">
+              Iniciar sesión
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="auth-social">
+                        <button type="button" class="btn-social">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12.545 10.239v3.821h5.445c-0.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 1 1 0-12.064c1.507 0 2.872 0.555 3.93 1.455l2.928-2.928A9.98 9.98 0 0 0 12.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-0.013z"/>
+                    </svg>
+                    Continuar con Google
+                  </button>
+                        <button type="button" class="btn-social">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Continuar con Facebook
+                  </button>
+            </div>
 
             <div class="auth-divider">o con tu email</div>
 
