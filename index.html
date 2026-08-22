@@ -457,9 +457,8 @@
 
                 
                     <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <h5>spawn-point</h5>
 
-                        <img src="../../../Assets/Images/logo/spawn-point-logo.webp" alt="Logo spawn-point" class="img-fluid mb-3"
+                        <img src="./Assets/Images/logo/spawn-point-logo.webp" alt="Logo-spawn-point" class="img-fluid mb-3"
                             style="max-width: 150px;">
 
                         <p>
@@ -485,10 +484,10 @@
                         <h5>Información</h5>
 
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-white text-decoration-none">Quiénes somos</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Envíos</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Medios de pago</a></li>
+                            <li><a href="./Pages/Sobre-nosotros/" class="text-white text-decoration-none">Sobre nosotros</a></li>
+                            <li><a href="./Pages/error404/404.html" class="text-white text-decoration-none">Preguntas frecuentes</a></li>
+                            <li><a href="./Pages/error404/404.html" class="text-white text-decoration-none">Envíos</a></li>
+                            <li><a href="./Pages/error404/404.html" class="text-white text-decoration-none">Medios de pago</a></li>
                         </ul>
                     </div>
 
@@ -498,191 +497,6 @@
             </div>
     </footer>
   
-
-    <!-- <div
-      class="modal fade auth-modal"
-      id="loginModal"
-      tabindex="-1"
-      aria-labelledby="loginModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="loginModal">
-              Iniciar sesión
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
-          </div>
-
-                    
-                    <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <h5>Seguinos</h5>
-
-                        <ul class="list-unstyled">
-                            <li><a href="./Pages/error404/404.html" class="text-white text-decoration-none">Facebook</a></li>
-                            <li><a href="./Pages/error404/404.html"class="text-white text-decoration-none">Instagram</a></li>
-                            <li><a href="./Pages/error404/404.html" class="text-white text-decoration-none">TikTok</a></li>
-                            <li><a href="./Pages/error404/404.html" class="text-white text-decoration-none">X</a></li>
-                        </ul>
-                    </div>
-
-            <div class="auth-divider">o con tu email</div>
-
-            <form>
-              <div class="mb-3">
-                <label for="login-email" class="form-label">Correo electrónico</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="login-email"
-                  placeholder="tucorreo@ejemplo.com"
-                  minlength="5"
-                  maxlength="30"
-                  required
-                >
-              </div>
-
-              <div class="mb-3">
-                <div class="d-flex justify-content-between align-items-center">
-                  <label for="login-password" class="form-label mb-0">Contraseña</label>
-                  <a href="#" class="auth-forgot">¿Olvidaste tu contraseña?</a>
-                </div>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="login-password"
-                  placeholder="••••••••"
-                  minlength="6"
-                  maxlength="30"
-                  required
-                >
-              </div>
-
-              <button type="submit" class="btn btn-submit">Iniciar sesión</button>
-            </form>
-
-            <p class="auth-switch">
-              ¿No tenés cuenta?
-              <a href="#" data-switch-modal="registerModal">Registrate</a>
-            </p>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div
-      class="modal fade auth-modal"
-      id="registerModal"
-      tabindex="-1"
-      aria-labelledby="registerModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="registerModalLabel">
-              Crear cuenta
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Cerrar"
-            ></button>
-          </div>
-
-          <div class="modal-body">
-
-            <div class="auth-social">
-                        <button type="button" class="btn-social">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                      <path d="M12.545 10.239v3.821h5.445c-0.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 1 1 0-12.064c1.507 0 2.872 0.555 3.93 1.455l2.928-2.928A9.98 9.98 0 0 0 12.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-0.013z"/>
-                    </svg>
-                    Registrarse con Google
-                  </button>
-                        <button type="button" class="btn-social">
-                   
-                    Registrarse con Facebook
-                  </button>
-            </div>
-
-            <div class="auth-divider">o creá tu cuenta</div>
-
-            <form>
-              <div class="mb-3">
-                <label for="register-name" class="form-label">Nombre completo</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="register-name"
-                  placeholder="Tu nombre"
-                  minlength="2"
-                  maxlength="50"
-                  required
-                >
-              </div>
-
-              <div class="mb-3">
-                <label for="register-email" class="form-label">Correo electrónico</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="register-email"
-                  placeholder="tucorreo@ejemplo.com"
-                  minlength="5"
-                  maxlength="50"
-                  required
-                >
-              </div>
-
-              <div class="mb-3">
-                <label for="register-password" class="form-label">Contraseña</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="register-password"
-                  placeholder="Mínimo 6 caracteres"
-                  minlength="6"
-                  maxlength="30"
-                  required
-                >
-              </div>
-
-              <div class="mb-3">
-                <label for="register-confirm" class="form-label">Confirmar contraseña</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="register-confirm"
-                  placeholder="Repetí tu contraseña"
-                  minlength="6"
-                  maxlength="30"
-                  required
-                >
-              </div>
-
-              <button type="submit" class="btn btn-submit">Crear cuenta</button>
-            </form>
-
-            <p class="auth-switch">
-              ¿Ya tenés cuenta?
-              <a href="#" data-switch-modal="loginModal">Iniciá sesión</a>
-            </p>
-
-          </div>
-
-        </div>
-      </div>
-    </div> -->
 
     <div
       class="modal fade auth-modal"
