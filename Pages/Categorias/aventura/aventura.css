@@ -428,12 +428,7 @@ main {
     font-family: var(--google-sans-flex);
 }
 
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  
-}
+
 
 .card-img-overlay {
   z-index: 1;
@@ -453,6 +448,16 @@ main {
   display: block;
 }
 
+.dropdown-menu-estetica {
+  background-color: var(--neutral-fondo) !important;
+}
+
+.dropdown-menu-estetica > li > a {
+  color: var(--titulos-parrafos) !important;
+  &:hover {
+    background-color: var(--hover-botones);
+  }
+}
 
 @media (max-width: 991.98px) {
   .navbar-spawn {

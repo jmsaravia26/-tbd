@@ -4,7 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>spawn Point</title>
+    <link rel="shortcut icon" href="../../../Assets/Images/logo/spawn-point-logo.webp" type="image/x-icon">
+    <title>Spawn Point | Juegos de RPG</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Michroma&display=swap" rel="stylesheet">
@@ -13,79 +14,132 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-spawn">
+      <div class="container-fluid navbar-container">
+        <a class="navbar-brand navbar-logo" href="../../../index.html">
+          <img src="../../../Assets/Images/logo/spawn-point-logo.webp" class="imagen-logo" alt="Spawn Point">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav navbar-links">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../Sobre-nosotros/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías
+          </a>
+          <ul class="dropdown-menu dropdown-menu-estetica">
+            <li><a class="dropdown-item" href="../aventura/aventura.html">Aventura</a></li>
+            <li><a class="dropdown-item" href="../cooperativo-online/cooperativo-online.html">Cooperativos</a></li>
+            <li><a class="dropdown-item" href="../estrategias/estrategias.html">Estrategias</a></li>
+            <li><a class="dropdown-item" href="../rpg/rpg.html">RPG</a></li>
+            <li><a class="dropdown-item" href="../../error404/404.html">Carreras</a></li>
+            <li><a class="dropdown-item" href="../../error404/404.html">Ciencia Ficción</a></li>
+            <li><a class="dropdown-item" href="../../error404/404.html">Simulación</a></li>
+            <li><a class="dropdown-item" href="../../error404/404.html">Anime</a></li>
+            <li><a class="dropdown-item" href="../../error404/404.html">Novela Gráfica</a></li>
+            <li><a class="dropdown-item" href="../../error404/404.html">VR</a></li>
+          </ul>
+        </li>
+          </ul>
+          <div class="navbar-actions">
+            <form class="search-form" role="search">
+              <input class="search-input" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn-search" type="submit" href="../../error404/404.html">
+                Buscar
+              </button>
+            </form>
+            <button type="button" class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Iniciar sesión
+            </button>
+            <a href="../../Carrito/carrito.html" class="btn-cart">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48-.08-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.89-2-1.99-2z"/>
+              </svg>
+              <span class="cart-badge">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
      <main>
        <div class="container g-5 contenedor-padre">
         <div class="mb-4 titulo">
             <h3>RPG</h3>
         </div>
         <div class="row contenedor-cards g-5 ">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img src="../../../Assets/Images/categorias-productos/rpg/header-elder-scrolls-oblivion.webp" class="card-img-top" alt="...">
+                        <img src="../../../Assets/Images/categorias-productos/rpg/Diablo IV/header-diablo-iv.webp" class="card-img-top" alt="diablo-iv-categorias">
                     <div class="card-body">
-                        <h5 class="card-title text-white">Elder Scrolls Oblivion</h5>
+                        <h5 class="card-title text-white">Diablo IV</h5>
                         <div class="d-flex justify-content-end py-1">
-                            <a href="" class="btn btn-info d-flex">Ver más</a>
+                            <a href="../../productos/rpg/diablo-iv/diablo-vi.html" class="btn btn-info d-flex">Ver más</a>
                         </div>
                     </div>
                     </div>
                 </div>
                  <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img src="../../../Assets/Images/categorias-productos/rpg/header-grim-dawn.webp" class="card-img-top" alt="...">
+                        <img src="../../../Assets/Images/categorias-productos/rpg/baldurs-gate/header-baldurs-gate.webp" class="card-img-top" alt="baldurs-gate-categoria">
                     <div class="card-body">
-                        <h5 class="card-title text-white">Grim Dawn</h5>
+                        <h5 class="card-title text-white">Baldur's Gate</h5>
                         <div class="d-flex justify-content-end py-1">
-                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                            <a href="../../productos/rpg/baldurs-gate/baldurs-gate.html" class="btn btn-info d-flex">Ver más</a>
                         </div>
                     </div>
                     </div>
                 </div>
                  <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img src="../../../Assets/Images/categorias-productos/rpg/header-lies-of-p.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-white">Lies Of P</h5>
-                        <div class="d-flex justify-content-end py-1">
-                            <a href="#" class="btn btn-info d-flex">Ver más</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../../../Assets/Images/categorias-productos/rpg/header-no-rest-wicked.webp" class="card-img-top" alt="...">
+                        <img src="../../../Assets/Images/categorias-productos/rpg/header-no-rest-wicked.webp" class="card-img-top" alt=no-rest-wicked-categoria">
                     <div class="card-body">
                         <h5 class="card-title text-white">No Rest For the Wicked</h5>
                         <div class="d-flex justify-content-end py-1">
-                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                            <a href="../../error404/404.html" class="btn btn-info d-flex">Ver más</a>
                         </div>
                     </div>
                     </div>
                 </div> 
                  <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img src="../../../Assets/Images/categorias-productos/rpg/baldurs-gate/header-baldurs-gate.webp" class="card-img-top" alt="...">
+                        <img src="../../../Assets/Images/categorias-productos/rpg/header-grim-dawn.webp" class="card-img-top" alt="grim-dawn-categoria">
                     <div class="card-body">
-                        <h5 class="card-title text-white">Baldur's Gate</h5>
+                        <h5 class="card-title text-white">Grim Dawn</h5>
                         <div class="d-flex justify-content-end py-1">
-                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                            <a href="../../error404/404.html" class="btn btn-info d-flex">Ver más</a>
                         </div>
                     </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card" style="width: 18rem;">
-                        <img src="../../../Assets/Images/categorias-productos/rpg/Diablo IV/header-diablo-iv.webp" class="card-img-top" alt="...">
+                        <img src="../../../Assets/Images/categorias-productos/rpg/header-lies-of-p.webp" class="card-img-top" alt="lies-of-p-categoria">
                     <div class="card-body">
-                        <h5 class="card-title text-white">Diablo IV</h5>
+                        <h5 class="card-title text-white">Lies of P</h5>
                         <div class="d-flex justify-content-end py-1">
-                            <a href="#" class="btn btn-info d-flex">Ver más</a>
+                            <a href="../../error404/404.html" class="btn btn-info d-flex">Ver más</a>
                         </div>
                     </div>
                     </div>
                 </div>
-                
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../../Assets/Images/categorias-productos/rpg/header-elder-scrolls-oblivion.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Elder Scrolls: Oblivion</h5>
+                        <div class="d-flex justify-content-end py-1">
+                            <a href="../../error404/404.html" class="btn btn-info d-flex">Ver más</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
     </div>
 </div>
@@ -136,6 +190,197 @@
 
             </div>
     </footer>
+
+<div
+      class="modal fade auth-modal"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModal">
+              Iniciar sesión
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="auth-social">
+                        <button type="button" class="btn-social">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12.545 10.239v3.821h5.445c-0.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 1 1 0-12.064c1.507 0 2.872 0.555 3.93 1.455l2.928-2.928A9.98 9.98 0 0 0 12.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-0.013z"/>
+                    </svg>
+                    Continuar con Google
+                  </button>
+                        <button type="button" class="btn-social">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12S0 5.446 0 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Continuar con Facebook
+                  </button>
+            </div>
+
+            <div class="auth-divider">o con tu email</div>
+
+            <form>
+              <div class="mb-3">
+                <label for="login-email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="login-email"
+                  placeholder="tucorreo@ejemplo.com"
+                  minlength="5"
+                  maxlength="30"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label for="login-password" class="form-label mb-0">Contraseña</label>
+                  <a href="#" class="auth-forgot">¿Olvidaste tu contraseña?</a>
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="login-password"
+                  placeholder="••••••••"
+                  minlength="6"
+                  maxlength="30"
+                  required
+                >
+              </div>
+
+              <button type="submit" class="btn btn-submit">Iniciar sesión</button>
+            </form>
+
+            <p class="auth-switch">
+              ¿No tenés cuenta?
+              <a href="#" data-switch-modal="registerModal">Registrate</a>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade auth-modal"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="registerModalLabel">
+              Crear cuenta
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="auth-social">
+                        <button type="button" class="btn-social">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12.545 10.239v3.821h5.445c-0.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 1 1 0-12.064c1.507 0 2.872 0.555 3.93 1.455l2.928-2.928A9.98 9.98 0 0 0 12.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-0.013z"/>
+                    </svg>
+                    Registrarse con Google
+                  </button>
+                        <button type="button" class="btn-social">
+                   
+                    Registrarse con Facebook
+                  </button>
+            </div>
+
+            <div class="auth-divider">o creá tu cuenta</div>
+
+            <form>
+              <div class="mb-3">
+                <label for="register-name" class="form-label">Nombre completo</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="register-name"
+                  placeholder="Tu nombre"
+                  minlength="2"
+                  maxlength="50"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="register-email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="register-email"
+                  placeholder="tucorreo@ejemplo.com"
+                  minlength="5"
+                  maxlength="50"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="register-password" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="register-password"
+                  placeholder="Mínimo 6 caracteres"
+                  minlength="6"
+                  maxlength="30"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="register-confirm" class="form-label">Confirmar contraseña</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="register-confirm"
+                  placeholder="Repetí tu contraseña"
+                  minlength="6"
+                  maxlength="30"
+                  required
+                >
+              </div>
+
+              <button type="submit" class="btn btn-submit">Crear cuenta</button>
+            </form>
+
+            <p class="auth-switch">
+              ¿Ya tenés cuenta?
+              <a href="#" data-switch-modal="loginModal">Iniciá sesión</a>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
